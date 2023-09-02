@@ -1,0 +1,91 @@
+{
+  "title": "Xcode",
+  "rules": [
+    {
+      "description": "Double tap 'left_shift' to 'command + shift + o'",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_shift"
+          },
+          "to": [
+            {
+              "key_code": "o",
+              "modifiers": [
+                "command",
+                "shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "left_shift_key",
+              "value": 1
+            },
+            {
+              "bundle_identifiers": [
+                "^com\\.apple\\.dt.Xcode$"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_shift",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "left_shift_key",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "left_shift"
+            }
+          ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "set_variable": {
+                  "name": "left_shift_key",
+                  "value": 0
+                }
+              }
+            ],
+            "to_if_canceled": [
+              {
+                "set_variable": {
+                  "name": "left_shift_key",
+                  "value": 0
+                }
+              }
+            ]
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "left_shift_key",
+              "value": 0
+            },
+            {
+              "bundle_identifiers": [
+                "^com\\.apple\\.dt.Xcode$"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
