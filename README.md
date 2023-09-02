@@ -12,6 +12,10 @@ You can download Karabiner-Elements from their [official website](https://karabi
 
 ## Installation
 
+You have two options for installing the configuration: manually copying the JSON files or using the provided `install.sh` script for automated installation.
+
+### Manual Installation
+
 1. Clone this repository.
 
     ```bash
@@ -24,9 +28,22 @@ You can download Karabiner-Elements from their [official website](https://karabi
     cp karabiner-xcode-to-intellij-shortcuts/*.json ~/.config/karabiner/assets/complex_modifications/
     ```
 
-3. Open Karabiner-Elements and go to the "Complex Modifications" tab. Click on "Add Rule."
+### Automated Installation Using Script
 
-4. Choose the appropriate rule from the list and click "Enable."
+Alternatively, you can use the `install.sh` script to automate the process.
+
+1. Open your terminal.
+2. Navigate to the directory where `xcode.json` and `install.sh` are located.
+3. Run the following commands:
+
+    ```bash
+    chmod +x install.sh  # Make the script executable
+    ./install.sh         # Run the script
+    ```
+
+After running either of the above methods, the JSON configuration file will be copied to `~/.config/karabiner/assets/complex_modifications/`.
+
+If you encounter any issues, please make sure that Karabiner-Elements is installed and the target directory exists.
 
 ## Usage
 
