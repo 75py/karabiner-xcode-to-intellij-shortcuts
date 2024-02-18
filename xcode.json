@@ -95,14 +95,17 @@
           "from": {
             "key_code": "close_bracket",
             "modifiers": {
-              "mandatory": ["left_command"]
+              "mandatory": [
+                "left_command"
+              ]
             }
           },
           "to": [
             {
               "key_code": "left_arrow",
               "modifiers": [
-                "left_command", "left_control"
+                "left_command",
+                "left_control"
               ]
             }
           ],
@@ -125,14 +128,17 @@
           "from": {
             "key_code": "backslash",
             "modifiers": {
-              "mandatory": ["left_command"]
+              "mandatory": [
+                "left_command"
+              ]
             }
           },
           "to": [
             {
               "key_code": "right_arrow",
               "modifiers": [
-                "left_command", "left_control"
+                "left_command",
+                "left_control"
               ]
             }
           ],
