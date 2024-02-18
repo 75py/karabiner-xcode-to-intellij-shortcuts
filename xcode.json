@@ -146,6 +146,62 @@
           ]
         }
       ]
+    },
+    {
+      "description": "button3 to command + control + <-",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button3"
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_command",
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "^com\\.apple\\.dt.Xcode$"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "button4 to command + control + ->",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button4"
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "left_command",
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "^com\\.apple\\.dt.Xcode$"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
