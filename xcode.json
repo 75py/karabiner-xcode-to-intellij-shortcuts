@@ -2,7 +2,7 @@
   "title": "Xcode",
   "rules": [
     {
-      "description": "Double tap 'left_shift' to 'command + shift + o'",
+      "description": "Double-tap the left shift key to execute Xcode's Quick Open (Command + Shift + O), enabling rapid searching and access to files and symbols.",
       "manipulators": [
         {
           "type": "basic",
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "description": "command + [ to control + command + <-",
+      "description": "Customizes the 'Command + [' key operation to navigate one step back in the navigation history (Control + Command + Left Arrow), allowing for efficient navigation through code using only the keyboard.",
       "manipulators": [
         {
           "type": "basic",
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "description": "command + ] to control + command + ->",
+      "description": "Customizes the 'Command + ]' operation to navigate one step forward in the navigation history (Control + Command + Right Arrow), facilitating easy movement to previous and next code positions using keyboard commands.",
       "manipulators": [
         {
           "type": "basic",
@@ -154,7 +154,7 @@
       ]
     },
     {
-      "description": "button3 to command + control + <-",
+      "description": "Assigns the operation 'Navigate back in navigation history (Command + Control + Left Arrow)' to mouse button 3, enabling quick return to previous locations within Xcode with just mouse actions.",
       "manipulators": [
         {
           "type": "basic",
@@ -182,7 +182,7 @@
       ]
     },
     {
-      "description": "button4 to command + control + ->",
+      "description": "Assigns the operation 'Navigate forward in navigation history (Command + Control + Right Arrow)' to mouse button 4, allowing for swift advancement to later locations within Xcode using only the mouse.",
       "manipulators": [
         {
           "type": "basic",
